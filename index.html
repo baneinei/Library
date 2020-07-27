@@ -13,13 +13,13 @@
 
 <div id="fade" style="display:none;">
     <div id="form_box">
-        <form>
-            <input type="text" placeholder="Book Title">
-            <input type="text" placeholder="Author">
-            <input type="text" placeholder="Pages">
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">I have read this book</label><br>
-            <input type="button" value="Submit">
+        <form id="book_form">
+            <input type="text" id="book_title" placeholder="Book Title" name="title" value="">
+            <input type="text" id="book_author" placeholder="Author" name="author">
+            <input type="number" id="book_pages" placeholder="Pages" name="pages">
+            <input type="radio" id="book_read" name="read">
+            <label for="read">I have read this book</label><br>
+            <input id="submit_form" type="button" value="Submit">
 
         </form>
     </div>
