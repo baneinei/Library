@@ -2,10 +2,12 @@
 <head>
 <title>Library</title>
 <link rel="stylesheet" href="main.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
-<button id="open_form_btn">Add Book</button>
+<button id="open_form_btn">+</button>
 
 <div id="container">
 
@@ -14,9 +16,10 @@
 <div id="fade" style="display:none;">
     <div id="form_box">
         <form id="book_form">
-            <input type="text" id="book_title" placeholder="Book Title" name="title" value="">
-            <input type="text" id="book_author" placeholder="Author" name="author">
-            <input type="number" id="book_pages" placeholder="Pages" name="pages">
+            <input class="input_box" type="text" id="book_title" placeholder="Book Title" name="title" value="">
+            <input class="input_box" type="text" id="book_author" placeholder="Author" name="author">
+            <input class="input_box" type="number" id="book_pages" placeholder="Pages" name="pages">
+            <br>
             <input type="radio" id="book_read" name="read">
             <label for="read">I have read this book</label><br>
             <input id="submit_form" type="button" value="Submit">

@@ -1,3 +1,11 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
 .book_card {
     padding:16px;
 
@@ -6,8 +14,30 @@
 box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.34);
 
     margin:6px;
-    width:136px;
-    height:202px;
+    width:205px;
+    float:left;
+    height:300px;
+}
+
+.book_card p {
+    padding:4px;
+
+}
+
+.book_card button {
+    
+    width:20%;
+    background-color:white;
+    border-radius:4px;
+    border:1px solid grey;
+
+}
+
+.book_card .remove_book {
+    float:right;
+}
+
+.book_card .toggle_read {
     float:left;
 }
 
@@ -20,14 +50,74 @@ box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.34);
     position:fixed;
 }
 
+#open_form_btn {
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:none;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,253,255,1) 0%, rgba(153,237,255,1) 100%);
+    font-size:32px;
+    color:white;
+}
+
+#container {
+    margin:0 auto;
+    display:table;
+    width:auto;
+}
+
 #form_box {
-    width:180px;
+    width:300px;
     margin: 0 auto;
-    background-color: silver;
-    padding:24px;
+    background-color: white;
+    padding:40px;
     margin-top:200px;
+}
+
+#book_form {
+    width:200px;
+    margin:0 auto;
+    display: table;
+    
+}
+
+#book_form input[type=button],#book_form input[type=text],#book_form input[type=number] {
+    width:100%;
+}
+
+.input_box {
+    padding:12px;
 }
 
 #form_box input {
     margin:4px;
 }
+
+input[type=radio] {
+    width:20px;
+}
+
+#title {
+    font-size:24px;
+}
+
+#author {
+    font-size:20px;
+}
+
+@media screen and (max-width: 1310px) {
+    #container {
+        width:675px;
+    }
+  }
+
+
+  @media screen and (max-width: 660px) {
+    #container {
+        width:250px;
+    }
+  }
